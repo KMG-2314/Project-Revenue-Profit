@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenue Assurance Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script defer src="{{ url_for('static', filename='script.js') }}"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="card">
+            <h1>📊 Revenue Assurance Processor</h1>
+            <p class="subtitle">Upload your Excel file to clean, calculate & download instantly.</p>
+
+            <div class="upload-box">
+                <label for="fileInput" id="fileLabel">
+                    <span id="fileLabelText">📁 Choose Excel File (.xlsx)</span>
+                </label>
+                <input type="file" id="fileInput" name="file" accept=".xlsx">
+            </div>
+
+            <div class="button-group">
+                <button id="processBtn" disabled>⚙ Process & Download</button>
+            </div>
+
+            <div id="status" class="status-text"></div>
+            <div id="previewContainer" class="preview-table"></div>
+        </div>
+    </div>
+</body>
+</html>

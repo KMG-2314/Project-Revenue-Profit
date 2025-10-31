@@ -1,0 +1,119 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.main-container {
+    width: 90%;
+    max-width: 700px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #333;
+}
+
+.subtitle {
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.upload-box {
+    border: 2px dashed #00aaff;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-box:hover {
+    background-color: #e8f7ff;
+}
+
+#fileInput {
+    display: none;
+}
+
+#fileLabelText {
+    font-size: 16px;
+    font-weight: 500;
+    color: #007acc;
+}
+
+.button-group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    background: linear-gradient(90deg, #0072ff, #00c6ff);
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 114, 255, 0.3);
+}
+
+.status-text {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+.preview-table {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.preview-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.preview-table th, .preview-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.preview-table th {
+    background-color: #0072ff;
+    color: white;
+}
